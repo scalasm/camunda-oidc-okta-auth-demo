@@ -1,7 +1,16 @@
 # Camunda OIDC integration with Okta Identity Provider - Hosted
 
-###
-This project was based on [camunda-saml-okta-auth](https://github.com/darlanmoraes/camunda-saml-okta-auth.git)
+### My changes
+This project is based on [camunda-saml-okta-auth](https://github.com/denisgmarques/camunda-oidc-okta-auth), that in turn was based on 
+ on [camunda-saml-okta-auth](https://github.com/darlanmoraes/camunda-saml-okta-auth.git) ... why not adding my own to the series? :D
+
+Jokes aside, this codebase 
+- bumps the versions of Spring Boot 2.7.9, Okta libraries to 3.0.3, and Camunda 7.18.0 . 
+- has some minor code changes but nothing that differentiate this repo. 
+
+At least you have working demo project using embedded Camunda with Spring Boot and Okta with latest versions to date :)
+
+I will leave the following notes as they originally were - they are not perfectly in line with the actual Okta UI but they are still a good reference.
 
 ###
 Pre-requisites:
