@@ -31,7 +31,7 @@ public class WebConfigSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/camunda/app/**")
                 .authenticated()
                 .antMatchers("/camunda/api/**")
-                .permitAll()
+                .authenticated()
                 .antMatchers("/camunda/app/*/styles/*.css", "/camunda/app/*/styles/*.js")
                 .permitAll()
             .and()
