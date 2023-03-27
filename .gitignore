@@ -23,7 +23,7 @@
 hs_err_pid*
 *.iml
 .idea
-target/*
+target
 
 camunda-h2-database.mv.db
 camunda-h2-database.trace.db
