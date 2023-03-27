@@ -7,12 +7,15 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.2.5.RELEASE</version>
+    <version>2.7.9</version>
     <relativePath/>
   </parent>
 
   <properties>
     <java.version>11</java.version>
+    <spring-boot.version>2.7.9</spring-boot.version>
+    <camunda.version>7.18.0</camunda.version>
+    <okta.version>3.0.3</okta.version>
   </properties>
 
   <groupId>br.com.bpms</groupId>
@@ -28,7 +31,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.12</version>
+      <version>1.18.26</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -43,19 +46,19 @@
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
-      <version>7.13.0</version>
+      <version>${camunda.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-      <version>7.13.0</version>
+      <version>${camunda.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-test</artifactId>
-      <version>7.13.0</version>
+      <version>${camunda.version}</version>
     </dependency>
 
     <dependency>
@@ -66,13 +69,13 @@
     <dependency>
       <groupId>com.okta.spring</groupId>
       <artifactId>okta-spring-boot-starter</artifactId>
-      <version>1.4.0</version>
+      <version>${okta.version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.okta.spring</groupId>
       <artifactId>okta-spring-sdk</artifactId>
-      <version>1.4.0</version>
+      <version>${okta.version}</version>
     </dependency>
 
     <dependency>
@@ -99,7 +102,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.2.5.RELEASE</version>
+        <version>${spring-boot.version}</version>
         <configuration>
           <layout>ZIP</layout>
           <jvmArguments>
