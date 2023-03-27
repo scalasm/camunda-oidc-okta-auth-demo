@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 
 public class AuthUtils {
     private static List<String> extractGroupsFromAuth(OAuth2User principal) {
-        ArrayList<String> groupList = new ArrayList<>();
-        JSONArray groupsJson = principal.getAttribute("groups");
+        final ArrayList<String> groupList = new ArrayList<>();
+        final JSONArray groupsJson = principal.getAttribute("groups");
 
         if (groupsJson != null) {
             for (int i = 0; i < groupsJson.size(); i++) {
